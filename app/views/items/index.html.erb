@@ -2,6 +2,10 @@
 
 <ul>
   <% @items.each do |item| %>
-    <li><%= item.name %></li>
+     <li><%= link_to item.name, item_path(item) %></li>
   <% end %>
 </ul>
+
+<hr>
+
+<%= link_to "New Item", new_item_path %>
