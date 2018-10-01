@@ -16,6 +16,7 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.column :usage_per_year, :integer
       t.column :usage_per_week, :integer
       t.column :months_used, :string
+      t.column :gift, :boolean, :default => false
 
       t.timestamps
     end
