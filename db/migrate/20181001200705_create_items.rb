@@ -8,7 +8,6 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.column :gifted_by, :string
       t.column :borrowed_by, :string
       t.column :borrowed_from, :string
-      t.column :make, :string
       t.column :price, :decimal, precision: 8, scale: 2
       t.column :quantity, :integer
       t.column :usage_per_month, :integer

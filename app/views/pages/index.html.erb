@@ -1,16 +1,22 @@
 <%= javascript_pack_tag 'hello_react' %>
-<h1>Keepsake</h1>
+<div class="container" id="trinkets">
+  <div class="jumbotron">
+    <h1>Keepsake</h1>
+  </div>
+<div class="bckimg">
 
-<% if current_user %>
-  <hr>
-  <hr>
-    <%= link_to 'Items', items_path %>
-  <hr>
-  <hr>
-  <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+</div>
+  <% if current_user %>
+    <hr>
+    <hr>
+      <%= link_to 'ITEMS', items_path %>
+    <hr>
+    <hr>
+    <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
 
-<% else %>
-  <%= link_to 'Sign Up', new_user_registration_path %>
-  <hr>
-  <%= link_to 'Sign In', new_user_session_path %>
-<% end %>
+  <% else %>
+    <%= link_to 'Sign Up', new_user_registration_path %>
+    <hr>
+    <%= link_to 'Sign In', new_user_session_path %>
+  <% end %>
+</div>

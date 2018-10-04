@@ -10,9 +10,27 @@
   </head>
 
   <body>
-    <div class="container"> 
+    <div class="container">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
+
+      <nav class="navbar navbar-light">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <h2>Keepsake</h2>
+          </div>
+
+
+          <ul class="nav navbar-nav navbar-right">
+            <span class="navbar-text">
+              <h2><%= link_to "Add New Item", new_item_path, class: "btn btn-default" %></h2>
+            </span>
+            <span class="navbar-text">
+              <h2 class="homelinktext"><%= link_to "Home", root_path, class: "btn btn-default" %></h2>
+            </span>
+          </ul>
+        </div>
+     </nav>
       <%= yield %>
     </div>
   </body>

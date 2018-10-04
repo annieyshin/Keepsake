@@ -14,3 +14,38 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+
+body {
+  background-color: #aaedd8;
+}
+
+.container {
+  width: 80%;
+  text-align: center;
+}
+
+#title {
+  color: #f4427a;
+  font-size: 42pt;
+}
+
+#trinkets {
+
+  height: 1000px;
+  font-size: 24pt;
+  background-image: url(/assets/background.jpg);
+  background-size: cover;
+  height: 1000px;
+}
+
+.bckimg {
+
+}
+
+#items {
+  background-image: url(/assets/items.jpg);
+  background-size: cover;
+  height: 1000px;
+  font-size: 24pt;
+}

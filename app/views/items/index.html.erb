@@ -1,13 +1,20 @@
-<h1>Item Information</h1>
+<div id="items">
+  <div class="jumbotron">
+  <h1>Item Inventory</h1>
+  </div>
+  <ul>
+    <% @items.each do |item| %>
+      <li><%= link_to item.name, item_path(item) %>
+        <hr>
+        <%= item.description %>
+        <%= link_to "Edit", edit_item_path(item), class: "btn btn-warning", remote: true %> |
+        <%= link_to "Delete", item_path(item), :data => {:confirm => "You sure?", :method => "delete"}, remote: true, class: "btn btn-danger" %>
+      </li>
+    <% end %>
+  </ul>
 
-<ul>
-  <% @items.each do |item| %>
-     <li><%= link_to item.name, item_path(item) %></li>
-  <% end %>
-</ul>
+  <%= link_to "New Item", new_item_path %>
+  <hr>
+  <%= link_to "Home", root_path %>
 
-<hr>
-
-<%= link_to "New Item", new_item_path %>
-<hr>
-<%= link_to "Home", root_path %>
+</div>
