@@ -3,7 +3,12 @@
 
 <% if current_user %>
   <hr>
+  <hr>
+    <%= link_to 'Items', items_path %>
+  <hr>
+  <hr>
   <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+
 <% else %>
   <%= link_to 'Sign Up', new_user_registration_path %>
   <hr>
