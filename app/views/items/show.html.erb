@@ -1,0 +1,8 @@
+<h1><%= @item.name %></h1>
+
+<p><%= link_to "Edit", edit_item_path(@item) %></p>
+<p><%= link_to "Delete", item_path(@item),
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"} %></p>
+
+<p><%= link_to "Return to items", items_path %></p>
