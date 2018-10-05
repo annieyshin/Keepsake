@@ -19,7 +19,8 @@
 body {
   background-color: #aaedd8;
   color: #ff0000;
-  font-family: sans-serif;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: bold;
 }
 
 .container {
@@ -28,9 +29,16 @@ body {
   text-align: center;
 }
 
+#tagtext {
+  color: #eeffcc;
+  font-size: 24pt;
+  font-weight: bolder;
+}
+
 #title {
   color: #f4427a;
   font-size: 42pt;
+  font-weight: bolder;
 }
 
 #trinkets {
